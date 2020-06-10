@@ -1,6 +1,6 @@
 # Packages
 
-install-pkg nasm genisoimage bochs bochs-x
+#install-pkg nasm genisoimage bochs bochs-x
 
 # Compile
 nasm -f elf32 loader.s
