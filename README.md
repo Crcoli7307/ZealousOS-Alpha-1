@@ -18,7 +18,7 @@ We have multiple developers that work on ZealousOS. Below you can find the most 
 ### Contact Us!
 
 Website: zealousos.cf
-E-Mail:  `support@zealousos.cf`
+E-Mail:  support@zealousos.cf
 Discord: https://discord.gg/TfyCX5j
 
 **The Source Files Are Listed In This GitHub Repository.**
