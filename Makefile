@@ -13,7 +13,7 @@ kernel.elf: $(OBJECTS)
 
 os.iso: kernel.elf
 	cp kernel.elf iso/boot/kernel.elf
-	genisoimage -R                              \
+	genisoimage -R                    \
 		-b boot/grub/stage2_eltorito    \
 		-no-emul-boot                   \
 		-boot-load-size 4               \
@@ -21,11 +21,12 @@ os.iso: kernel.elf
 		-input-charset utf8             \
 		-quiet                          \
 		-boot-info-table                \
-		-o os.iso                       \
+		-o zealous.iso                  \
 		iso
 
 run: os.iso
-	bochs -f bochsrc.txt -q
+	bochs -f bochsrc -q
+	$(clean)
 
 %.o: %.c
 	$(CC) $(CFLAGS)  $< -o $@
@@ -34,4 +35,4 @@ run: os.iso
 	$(AS) $(ASFLAGS) $< -o $@
 
 clean:
-	rm -rf *.o kernel.elf os.iso
+	rm -rf *.o kernel.elf zealous.iso
