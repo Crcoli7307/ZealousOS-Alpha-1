@@ -1,5 +1,5 @@
 # ZealousOS 
-## Faster, Easier, Better.
+## Faster, easier, better.
 
 
 ### What is ZealousOS?
